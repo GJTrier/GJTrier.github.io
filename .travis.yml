@@ -14,4 +14,4 @@ branches:
 
 
 script:
-  - bash build/gh-pages-report.sh
+  - bash build.sh
