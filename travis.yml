@@ -1,0 +1,17 @@
+before_install:
+  - gem install nanoc
+language: ruby
+rvm:
+  - 2.3.1l
+before_script:
+
+env:
+  global:
+    - secure: "ES3L3JHZATKlSKoxQRC0EDTYVfTM4rSDhhkvF3+oa5kpqQcUKsvwHR4OsvS+AF6H1NJ9b/8cZ+H6J4qy2k+xvAr6EVEqKgONZ198eINV7tVQyclVdaGNAcOT0Rq+5cR36qPHJgejIG9DwQwj+CnHynpbZECPXWPPUg/7U1Bh1GfVEd4kXQZqT3YtAcA5m8XvXu8/rgBXWGuY6XbTsVltSjeWnZMrdYbRKBDcom72j0eiaaE+hSVqmnEjek3KnL5CDbub63qhuJMF7GFjPA4mBUn3l3lk9sNHn1MVa4vPX71bf32Ul8stEQwLSWPvtKoZe6lBiruQU+BlNot4t4iENtnglgnghjZzzE3PR5PraaxnAXs8yGi9GvPU+2aY0ABDavKzOLVb1rsBZyXbaWx4HcSAUABIkn9mVw1Rrs+HLUrtoZ7xDGBaaKMSTaS7mUS7HwJda9mI1EQB/BBixD5DQCi7E4jmaC8P0rCoxPgveVcgtk127rbj0ShZOZHy6mY3Uh8fp3uAWuLH5dZCAwEtacALzkMq75iryexbgnVe7S5gtrzPNbPIDebJ3MiIdFVTQCESUn3qznxS25OrX/3Lz/PVzTvi8zN3k+GkWke9nxQB7wsXcHLbBpJ5wz8jbbwpF4HpMyPItlwdbHVpTL6OdykCKVVifES1WfHBQhjhLCE="
+branches:
+  except:
+    - gh-pages
+
+
+script:
+  - bash build/gh-pages-report.sh
